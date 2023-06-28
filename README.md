@@ -6,10 +6,10 @@ A small project I created, in order to learn some basics in Jenkins, Ansible and
 
 It contains the following
 
-- 'ansible' folder, which contains 2 playbooks to install docker and jenkins
-- 'docker' folder, which contains a docker-compose file with a Nginx image
-- 'Jenkins' folder, which contains a XML file, since I was using a job to trigger the builds
-- 'Nginx' folder, which contains a nginx.conf
+- `ansible` folder, which contains 2 playbooks to install docker and jenkins
+- `docker` folder, which contains a docker-compose file with a Nginx image
+- `Jenkins` folder, which contains a XML file, since I was using a job to trigger the builds
+- `Nginx` folder, which contains a nginx.conf
 - index.html, a page hosted by the Nginx
 
 ## Result
