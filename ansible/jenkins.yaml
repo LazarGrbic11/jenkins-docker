@@ -1,0 +1,33 @@
+---
+- name: Install Jenkins
+  hosts: server
+  become: true
+  vars:
+    ansible_ssh_private_key_file: ~/.ssh/id_rsa
+  tasks:
+    - name: Install Java
+      apt:
+        name: openjdk-11-jdk
+        state: present
+
+    - name: Add Jenkins Repository Key
+      apt_key:
+        url: https://pkg.jenkins.io/debian/jenkins.io.key
+        state: present
+
+    - name: Add Jenkins Repository
+      apt_repository:
+        repo: deb https://pkg.jenkins.io/debian-stable binary/
+        state: present
+
+    - name: Install Jenkins
+      apt:
+        name: jenkins
+        state: present
+        update_cache: true
+
+    - name: Start Jenkins Service
+      service:
+        name: jenkins
+        state: started
+        enabled: true
