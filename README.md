@@ -14,5 +14,5 @@ It contains the following
 
 ## Result
 
-The HTML page is currently hosted at [http://167.99.242.146:90](http://167.99.242.146:90)
+The HTML page is currently hosted at [http://167.99.242.146:90](http://167.99.242.146:90), and with any change created inside the HTML file, it will be polled by the Jenkins job, and using the `script.py` along with crontab(until I find a better way :joy:), it will copy the file and restart the `docker-compose`
 
