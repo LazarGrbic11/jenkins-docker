@@ -19,5 +19,5 @@ The HTML page is currently hosted at [http://167.99.242.146:90](http://167.99.24
 
 ## Note
 
-The `terraform.tf` file, located in the `terraform` folder is purposefully missing a token, because it was kept as a string :joy: 
+The `terraform.tf` file, located in the `terraform` folder, is purposefully missing a token, because it was kept as a string :joy: 
 
