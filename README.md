@@ -10,6 +10,7 @@ It contains the following
 - `docker` folder, which contains a docker-compose file with a Nginx image
 - `Jenkins` folder, which contains a XML file, since I was using a job to trigger the builds
 - `Nginx` folder, which contains a nginx.conf
+- `prometheus-grafana` folder, which contains files for installing and configuring Prometheus, Node Exporter, and Grafana
 - index.html, a page hosted by the Nginx
 
 ## Result
