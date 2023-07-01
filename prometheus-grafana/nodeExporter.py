@@ -18,4 +18,9 @@ subprocess.run(cmd, shell=True)
 cmd = "sudo nano /etc/systemd/system/node_exporter.service"
 subprocess.run(cmd, shell=True)
 
+cmd = "sudo systemctl daemon-reload"
+subprocess.run(cmd, shell=True)
+
+cmd = "sudo systemctl start node_exporter"
+subprocess.run(cmd, shell=True)
 
