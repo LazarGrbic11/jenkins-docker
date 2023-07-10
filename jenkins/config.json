@@ -1,0 +1,48 @@
+{
+  "project": {
+    "actions": "",
+    "description": "",
+    "keepDependencies": false,
+    "properties": {
+      "com.coravy.hudson.plugins.github.GithubProjectProperty": {
+        "projectUrl": "https://github.com/LazarGrbic11/jenkins-docker.git/",
+        "displayName": ""
+      }
+    },
+    "scm": {
+      "configVersion": 2,
+      "userRemoteConfigs": {
+        "hudson.plugins.git.UserRemoteConfig": {
+          "url": "https://github.com/LazarGrbic11/jenkins-docker.git"
+        }
+      },
+      "branches": {
+        "hudson.plugins.git.BranchSpec": {
+          "name": "*/master"
+        }
+      },
+      "doGenerateSubmoduleConfigurations": false,
+      "submoduleCfg": "",
+      "extensions": ""
+    },
+    "canRoam": true,
+    "disabled": false,
+    "blockBuildWhenDownstreamBuilding": false,
+    "blockBuildWhenUpstreamBuilding": false,
+    "triggers": {
+      "hudson.triggers.SCMTrigger": {
+        "spec": "* * * * *",
+        "ignorePostCommitHooks": false
+      }
+    },
+    "concurrentBuild": false,
+    "builders": {
+      "hudson.tasks.Shell": {
+        "command": "python3 script.py",
+        "configuredLocalRules": ""
+      }
+    },
+    "publishers": "",
+    "buildWrappers": ""
+  }
+}
