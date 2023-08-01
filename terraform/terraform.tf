@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "digitalocean" {
-  token = ""
+  token = DO_PAT
 }
 
 resource "digitalocean_volume" "testvolume" {

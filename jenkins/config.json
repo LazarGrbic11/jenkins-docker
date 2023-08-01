@@ -43,6 +43,13 @@
       }
     },
     "publishers": "",
-    "buildWrappers": ""
+    "buildWrappers": {
+      "hudson.plugins.ws__cleanup.PreBuildCleanup": {
+        "deleteDirs": true,
+        "cleanupParameter": "",
+        "externalDelete": "",
+        "disableDeferredWipeout": false
+      }
+    }
   }
 }
