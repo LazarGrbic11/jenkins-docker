@@ -5,9 +5,11 @@ terraform {
     }
   }
 }
-
+variable "do_token" {
+  type = string
+}
 provider "digitalocean" {
-  token = DO_PAT
+  token = var.do_token
 }
 
 resource "digitalocean_volume" "testvolume" {
